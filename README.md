@@ -8,7 +8,7 @@ when you're not online.
 
 # Installation
 
-  1. Add a new application to your pushsafer control panel, note the API key.
+  1. register or login into your pushsafer control panel, note your private or alias key.
   2. cp pushsafer.pl to ~/.irssi/scripts/ and symlink into scripts/autorun if you desire.
   3. touch ~/.irssi/pushsafer_ignores
   4. Within irssi: 
