@@ -1,4 +1,5 @@
-irssi-pushsafer
+![Pushsafer](https://www.pushsafer.com/de/assets/logos/logo.png)
+# irssi-pushsafer
 ==============
 
 Plugin for irssi (a console based IRC client) to send push-notifications using pushsafer.com.
@@ -15,14 +16,14 @@ when you're not online.
   2. Within irssi: 
     1. /load autorun/pushsafer.pl
     2. /set pushsafer_key <<your pushsafer private or alias key>>
-	3. optional set the following params > https://www.pushsafer.com/en/pushapi
-	4. /set pushsafer_device <<device or device group id>>
+    3. optional set the following params https://www.pushsafer.com/en/pushapi
+    4. /set pushsafer_device <<device or device group id>>
     5. /set pushsafer_sound <<sound number>>
-	6. /set pushsafer_icon <<icon number>>
-	7. /set pushsafer_vibration <<vibration 0-3>>
-	8. /set pushsafer_url <<optional url>>
-	9. /set pushsafer_urltitle <<optional url title>>
-	10. /set pushsafer_time2live <<number 0-43200 time in minutes, after which message automatically gets purged>>
+    6. /set pushsafer_icon <<icon number>>
+    7. /set pushsafer_vibration <<vibration 0-3>>
+    8. /set pushsafer_url <<optional url>>
+    9. /set pushsafer_urltitle <<optional url title>>
+    10. /set pushsafer_time2live <<number 0-43200 time in minutes, after which message automatically gets purged>>
     11. /save
     12. /pushtest hello world. (sends test message to your device(s)).
 
