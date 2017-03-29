@@ -1,7 +1,7 @@
 ![Pushsafer](https://www.pushsafer.com/de/assets/logos/logo.png)
 # irssi-pushsafer
 
-Plugin for irssi (a console based IRC client) to send push-notifications using pushsafer.com.
+Plugin for irssi (a console based IRC client) to send push-notifications using https://www.pushsafer.com.
 
 This allows you to be notified when someone messages/mentions you on IRC, 
 when you're not online.
