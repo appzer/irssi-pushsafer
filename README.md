@@ -17,9 +17,9 @@ when you're not online.
       3. optional set the following params https://www.pushsafer.com/en/pushapi
       4. /set pushsafer_device "device or device group id"
       5. /set pushsafer_sound "sound number 1-60"
-      6. /set pushsafer_icon "icon number 1-170>
-      7. /set pushsafer_iconcolor "icon color fe. #FF0000>
-      8. /set pushsafer_vibration "vibration 0-3>
+      6. /set pushsafer_icon "icon number 1-170"
+      7. /set pushsafer_iconcolor "icon color fe. #FF0000"
+      8. /set pushsafer_vibration "vibration 0-3"
       9. /set pushsafer_url "optional url"
       10. /set pushsafer_urltitle "optional url title"
       11. /set pushsafer_time2live "number 0-43200 time in minutes, after which message automatically gets purged"
