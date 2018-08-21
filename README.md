@@ -11,21 +11,24 @@ when you're not online.
   1. register or login into your pushsafer control panel, note your private or alias key.
   2. cp pushsafer.pl to ~/.irssi/scripts/ and symlink into scripts/autorun if you desire.
   3. touch ~/.irssi/pushsafer_ignores
-  4. Within irssi: 
-    1. /load autorun/pushsafer.pl
-    2. /set pushsafer_key "your pushsafer private or alias key"
-    3. optional set the following params https://www.pushsafer.com/en/pushapi
-    4. /set pushsafer_device "device or device group id"
-    5. /set pushsafer_sound "sound number 1-60"
-    6. /set pushsafer_icon "icon number 1-170>
-    7. /set pushsafer_iconcolor "icon color fe. #FF0000>
-    8. /set pushsafer_vibration "vibration 0-3>
-    9. /set pushsafer_url "optional url"
-    10. /set pushsafer_urltitle "optional url title"
-    11. /set pushsafer_time2live "number 0-43200 time in minutes, after which message automatically gets purged"
-    12. /save
-    13. /pushtest hello world. (sends test message to your device(s)).
-
+  4. Within irssi:
+      1. /load autorun/pushsafer.pl
+      2. /set pushsafer_key "your pushsafer private or alias key"
+      3. optional set the following params https://www.pushsafer.com/en/pushapi
+      4. /set pushsafer_device "device or device group id"
+      5. /set pushsafer_sound "sound number 1-60"
+      6. /set pushsafer_icon "icon number 1-170>
+      7. /set pushsafer_iconcolor "icon color fe. #FF0000>
+      8. /set pushsafer_vibration "vibration 0-3>
+      9. /set pushsafer_url "optional url"
+      10. /set pushsafer_urltitle "optional url title"
+      11. /set pushsafer_time2live "number 0-43200 time in minutes, after which message automatically gets purged"
+      11. /set pushsafer_priority "number -2, -1, 0, 1, 2"
+      12. /set pushsafer_retry "number 60-10800 time in seconds, after a message automatically resend"
+      13. /set pushsafer_expire "number 60-10800 time in secomds, after the retry stops"
+      14. /set pushsafer_answer "number 1 or 0"
+      15. /save
+      16. /pushtest hello world. (sends test message to your device(s)).
 
 # Dependencies
 
