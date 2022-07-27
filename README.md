@@ -6,6 +6,9 @@ Plugin for irssi (a console based IRC client) to send push-notifications using h
 This allows you to be notified when someone messages/mentions you on IRC, 
 when you're not online.
 
+# Download
+https://github.com/appzer/irssi-pushsafer/
+
 # Installation
 
   1. register or login into your pushsafer control panel, note your private or alias key.
