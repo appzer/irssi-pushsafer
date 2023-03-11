@@ -6,7 +6,7 @@ use vars qw($VERSION %IRSSI %config);
 use LWP::UserAgent;
 use Scalar::Util qw(looks_like_number);
 
-$VERSION = '0.0.2';
+$VERSION = '0.0.3';
 
 %IRSSI = (
     authors => 'Kevin Siml',
@@ -15,7 +15,7 @@ $VERSION = '0.0.2';
     description => 'Push hilights and private messages when away by the pushsafer.com API',
     license => 'BSD',
     url => 'https://www.pushsafer.com',
-    changed => "2018-08-21"
+    changed => "2023-03-11"
 );
 
 my $pushsafer_ignorefile;
@@ -78,7 +78,10 @@ sub send_push {
             pr => Irssi::settings_get_str('pushsafer_priority'),
             re => Irssi::settings_get_str('pushsafer_retry'),
             ex => Irssi::settings_get_str('pushsafer_expire'),
+            cr => Irssi::settings_get_str('pushsafer_confirm'),
             a => Irssi::settings_get_str('pushsafer_answer'),
+            ao => Irssi::settings_get_str('pushsafer_answeroptions'),
+            af => Irssi::settings_get_str('pushsafer_answerforce'),
             t => $channel
         ]
     );
@@ -299,7 +302,10 @@ Irssi::settings_add_str($IRSSI{'name'}, 'pushsafer_time2live', '');
 Irssi::settings_add_str($IRSSI{'name'}, 'pushsafer_priority', '');
 Irssi::settings_add_str($IRSSI{'name'}, 'pushsafer_retry', '');
 Irssi::settings_add_str($IRSSI{'name'}, 'pushsafer_expire', '');
+Irssi::settings_add_str($IRSSI{'name'}, 'pushsafer_confirm', '');
 Irssi::settings_add_str($IRSSI{'name'}, 'pushsafer_answer', '');
+Irssi::settings_add_str($IRSSI{'name'}, 'pushsafer_answeroptions', '');
+Irssi::settings_add_str($IRSSI{'name'}, 'pushsafer_answerforce', '');
 
 Irssi::command_bind('help pushignore', \&cmd_help);
 Irssi::command_bind('pushignore help', \&cmd_help);
